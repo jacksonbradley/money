@@ -121,7 +121,7 @@ class ModelMgr
         resolve(months)
       success: (data, textStatus, jqXHR) ->
         @handle data
-    return months
+    # return months
 
   queryRecord: (year, month) ->
     if not year?

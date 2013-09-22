@@ -12,4 +12,8 @@ Money.SummaryRoute = Ember.Route.extend
     console.log "setupController in SummaryRoute"
     controller.set 'model', model
     months = Money.ModelMgr.listMonth(model.id)
-    controller.set 'months', months
+    months.then (resolve, reject)->
+      controller.set 'months', resolve
+        
+      #resolve.set 'id', model.id
+    # controller.set 'months', months

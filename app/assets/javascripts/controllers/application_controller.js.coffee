@@ -13,9 +13,10 @@ Money.ApplicationController = Ember.ObjectController.extend
 
     toList: ->
       model = Money.ModelMgr.listMonth(@get 'currentYear')
-      # model.then (resolve, reject)->
-      # resolve.set 'id', year
-      model.set 'id', @get 'currentYear'
+      year = @get 'currentYear'
+      model.then (resolve, reject)->
+        resolve.set 'id', year
+      # model.set 'id', @get 'currentYear'
       @transitionToRoute 'year', model
 
     toSummary: ->
@@ -25,8 +26,11 @@ Money.ApplicationController = Ember.ObjectController.extend
 
     toTrend: ->
       model = Money.ModelMgr.listMonth(@get 'currentYear')
-      model.set 'id', @get 'currentYear'
-      model.set 'year', @get 'currentYear'
+      model.then (resolve, reject)->
+        resolve.set 'id', year
+        resolve.set 'year', year
+      # model.set 'id', @get 'currentYear'
+      # model.set 'year', @get 'currentYear'
       @transitionToRoute 'trend', model
 
     logout: ->

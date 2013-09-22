@@ -1,28 +1,15 @@
-== README
+== Introduction
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A project that visualize the Monny data. Monny is the iOS app that record my daily expense.
+The free version doesn't provide the visual function. I decide to make a web app to show it and it advancnces my Emberjs skill.
 
-Things you may want to cover:
+== How to use
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+1. db:migrate
+2. db:seed
+3. Create a .env file under root folder and fill your gmail id and password for sending email
+    GMAIL_ID=a@a.com
+    GMAIL_PASSWORD=a1234567
+4. rails s
+5. open http://127.0.0.1:3000
+6. Import your Monny csv. The csv can be export to Dropbox from Monny App.
