@@ -36,9 +36,13 @@ gem "highcharts-rails", "~> 3.0.0"
 group :development do
   gem "powder"
   gem 'dotenv-rails'
-
+  gem 'sqlite3'
 end
 
+group :production do
+  gem 'pg'
+  gem 'thin'
+end
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
