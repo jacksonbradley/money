@@ -1,0 +1,37 @@
+{{#if isNoRecord}}
+  <h3>You don't have any record now. Please upload your monny record first.</h3>
+  {{#link-to 'upload'}}<button class="btn btn-primary">Go Upload</button>{{/link-to}}
+{{else}}
+  <h1 class="text-center">{{model.year}} Year Report</h1>
+  <p class="text-center">Select one month to list details</p>
+  {{!-- {{#link-to 'trend'}}<button class="btn btn-primary">Show Trend</button>{{/link-to}} --}}
+  {{view Money.MonthButtonView modelBinding="model"}}
+  {{!-- <div class="text-center">
+    {{#each month in model}}
+    <span class="label label-info" {{action 'toMonth' month}}>{{month}}</span>
+    {{/each}}
+  </div>
+   --}}
+
+{{!--   <table class="table table-striped">
+    <thead>
+      <tr>
+        <td>Amount</td>
+        <td>Category</td>
+        <td>Description</td>
+        <td>Date</td>
+      </tr>
+    </thead>
+    <tbody>
+    {{#each record in model}}
+      <tr>
+        <td>{{record.amount}}</td>
+        <td>{{record.categoryName}}</td>
+        <td>{{record.description}}</td>
+        <td>{{record.date}}</td>
+      </tr>
+    {{/each}}
+    </tbody>
+  </table> --}}
+  {{outlet}}
+{{/if}}

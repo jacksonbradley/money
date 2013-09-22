@@ -1,0 +1,33 @@
+<p class="text-center month-title"><strong>{{model.firstObject.monthFullName}}</strong> Details
+<button class="btn btn-primary" {{action toSummaryMonth model}}>Graph</button>
+</p>
+<div class="table-responsive">
+  <table class="table table-striped table-condensed">
+    <thead>
+      <tr>
+        <td>Date</td>
+        <td>Category</td>
+        <td>Amount(NT)</td>
+        <td>Description</td>
+      </tr>
+    </thead>
+    <tfoot>
+      <tr class="success">
+        <td><strong>{{model.firstObject.monthFullName}}</strong></td>
+        <td><strong>ALL</strong></td>
+        <td><strong>{{totalCost}}</strong></td>
+        <td><strong>total costs of the month</strong></td>
+      </tr>
+    </tfoot>
+    <tbody>
+    {{#each record in model}}
+      <tr>
+        <td>{{record.date}}</td>
+        <td>{{record.categoryName}}</td>
+        <td>{{record.amount}}</td>
+        <td>{{record.description}}</td>
+      </tr>
+    {{/each}}
+    </tbody>
+  </table>
+</div>

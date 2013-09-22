@@ -1,0 +1,5 @@
+<div class="text-center">
+  {{#each item in view.model}}
+    <div class="btn btn-info" {{action 'toMonth' item.month}}>{{item.monthName}}</div>
+  {{/each}}
+</div>

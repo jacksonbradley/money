@@ -1,0 +1,10 @@
+{{!-- {{#link-to 'year' model.id}}<button class="btn btn-primary">List</button>{{/link-to}} --}}
+<div id="summary" class="trend-diagram"></div>
+{{view Money.MonthButtonView modelBinding="months"}}
+{{!-- <div class="text-center">
+  {{#each month in months}}
+    <span class="label label-info" {{action 'toMonth' month}}>{{month}}</span>
+  {{/each}}
+</div>
+ --}}
+ {{outlet}}
