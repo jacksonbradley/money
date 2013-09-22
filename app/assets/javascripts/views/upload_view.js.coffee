@@ -6,6 +6,7 @@ Money.UploadView = Ember.View.extend
     options = 
       success: -> 
         self.set 'showMessage','import done. We are redirecting you to index page in 3 secs' 
+        Money.ModelMgr.listYear('force')
         Ember.run.later self.get('controller'), ()->
           @transitionToRoute '/'
         ,3000

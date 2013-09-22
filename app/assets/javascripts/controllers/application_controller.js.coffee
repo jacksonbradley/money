@@ -1,8 +1,9 @@
 Money.ApplicationController = Ember.ObjectController.extend
   selectedYear: 0
-  listYear: (->
-    return Money.ModelMgr.listYear()
-  ).property()
+  listYear: Money.ModelMgr.listYear()
+  # listYear: (->
+  #   return Money.ModelMgr.listYear()
+  # ).property()
 
   init: ->
     @_super()

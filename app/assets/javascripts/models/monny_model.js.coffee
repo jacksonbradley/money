@@ -68,6 +68,7 @@ monthFullName =
 
 # records = Ember.ArrayProxy.create({content:[]})
 # summarys = Ember.ArrayProxy.create({content:[]})
+years = Ember.ArrayProxy.create({content:[]})
 
 class ModelMgr
   queryTrend: (year) ->
@@ -101,18 +102,9 @@ class ModelMgr
         @handle data
     return trends
 
-  listYear: ->
-    years = Ember.ArrayProxy.create({content:[]})
-    new Ember.RSVP.Promise (resolve) ->
-      $.ajax '/api/list',
-      type: 'GET'
-      dataType: 'json'
-      handle: (data)->
-        for raw in data.monny
-          years.addObject raw.year
-        resolve(years)
-      success: (data, textStatus, jqXHR) ->
-        @handle data
+  listYear: (force)->
+    if force?
+      retrieveYears()
     return years
 
   listMonth: (year) ->
@@ -213,3 +205,14 @@ $.ajax '/api/category',
   success: (data, textStatus, jqXHR) ->
     @handle data
 
+retrieveYears = ()->
+  $.ajax '/api/list',
+    type: 'GET'
+    dataType: 'json'
+    handle: (data)->
+      years.clear()
+      for raw in data.monny
+        years.addObject raw.year
+    success: (data, textStatus, jqXHR) ->
+      @handle data
+retrieveYears()
