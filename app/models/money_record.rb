@@ -1,5 +1,6 @@
 class MoneyRecord < ActiveRecord::Base
   belongs_to :user
+  default_scope { order("year DESC, month ASC, day ASC") }
   scope :expense, -> { where.not(category_id: 0) }
 
   def as_json(options={})
