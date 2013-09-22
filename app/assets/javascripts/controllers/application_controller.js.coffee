@@ -1,8 +1,12 @@
 Money.ApplicationController = Ember.ObjectController.extend
-  currentYear: (->
-    return new Date().getFullYear()
+  selectedYear: 0
+  listYear: (->
+    return Money.ModelMgr.listYear()
   ).property()
-  
+
+  init: ->
+    @_super()
+    @set 'selectedYear', new Date().getFullYear()
 
   actions:
     toRoot: ->
@@ -11,22 +15,25 @@ Money.ApplicationController = Ember.ObjectController.extend
     toUpload: ->
       @transitionToRoute 'upload'
 
-    toList: ->
-      model = Money.ModelMgr.listMonth(@get 'currentYear')
-      year = @get 'currentYear'
+    toList: (year)->
+      if year?
+        @set 'selectedYear', year
+
+      year = @get 'selectedYear'
+      model = Money.ModelMgr.listMonth(@get 'selectedYear')
       model.then (resolve, reject)->
         resolve.set 'id', year
       # model.set 'id', @get 'currentYear'
       @transitionToRoute 'year', model
 
     toSummary: ->
-      model = Money.ModelMgr.querySummary(@get 'currentYear')
-      model.set 'id', @get 'currentYear'
+      model = Money.ModelMgr.querySummary(@get 'selectedYear')
+      model.set 'id', @get 'selectedYear'
       @transitionToRoute 'summary', model 
 
     toTrend: ->
-      model = Money.ModelMgr.listMonth(@get 'currentYear')
-      year = @get 'currentYear'
+      model = Money.ModelMgr.listMonth(@get 'selectedYear')
+      year = @get 'selectedYear'
       model.then (resolve, reject)->
         resolve.set 'id', year
         resolve.set 'year', year

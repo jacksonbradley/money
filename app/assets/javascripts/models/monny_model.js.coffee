@@ -101,6 +101,20 @@ class ModelMgr
         @handle data
     return trends
 
+  listYear: ->
+    years = Ember.ArrayProxy.create({content:[]})
+    new Ember.RSVP.Promise (resolve) ->
+      $.ajax '/api/list',
+      type: 'GET'
+      dataType: 'json'
+      handle: (data)->
+        for raw in data.monny
+          years.addObject raw.year
+        resolve(years)
+      success: (data, textStatus, jqXHR) ->
+        @handle data
+    return years
+
   listMonth: (year) ->
     if not year?
       return []
