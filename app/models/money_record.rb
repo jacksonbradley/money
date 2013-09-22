@@ -1,6 +1,6 @@
 class MoneyRecord < ActiveRecord::Base
   belongs_to :user
-  default_scope { order("year DESC, month ASC, day ASC") }
+  # default_scope { order("year DESC, month ASC, day ASC") }
   scope :expense, -> { where.not(category_id: 0) }
 
   def as_json(options={})
@@ -10,7 +10,7 @@ class MoneyRecord < ActiveRecord::Base
   def self.listMonth(params)
     if params[:y].present?
       result = where("year = ?", params[:y])
-      result.expense.group(:month, :year).select(:month, :year, "sum(amount) as total")
+      result.expense.group(:month, :year).select(:month, :year, "sum(amount) as total").order("month ASC")
     else
       result = expense.group(:year).select(:year)
     end
