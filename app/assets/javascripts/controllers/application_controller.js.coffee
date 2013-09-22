@@ -26,6 +26,7 @@ Money.ApplicationController = Ember.ObjectController.extend
 
     toTrend: ->
       model = Money.ModelMgr.listMonth(@get 'currentYear')
+      year = @get 'currentYear'
       model.then (resolve, reject)->
         resolve.set 'id', year
         resolve.set 'year', year
