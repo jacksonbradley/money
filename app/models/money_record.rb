@@ -9,7 +9,7 @@ class MoneyRecord < ActiveRecord::Base
   def self.listMonth(params)
     if params[:y].present?
       result = where("year = ?", params[:y])
-      result.expense.group(:month).select(:month, :year, "sum(amount) as total")
+      result.expense.group(:month, :year).select(:month, :year, "sum(amount) as total")
     else
       result = expense.group(:year).select(:year)
     end
