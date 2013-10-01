@@ -4,16 +4,28 @@
 		"selected_items":
 		[
 			[
+				"contro",
+				"controller"
+			],
+			[
+				"tr",
+				"transitionToRoute"
+			],
+			[
+				"cate",
+				"category"
+			],
+			[
+				"mo",
+				"model"
+			],
+			[
 				"model",
 				"modelForTrend"
 			],
 			[
 				"query",
 				"queryTrend"
-			],
-			[
-				"cate",
-				"category_id"
 			],
 			[
 				"que",
@@ -368,34 +380,34 @@
 	"buffers":
 	[
 		{
+			"file": "app/assets/javascripts/controllers/application_controller.js.coffee",
+			"settings":
+			{
+				"buffer_size": 1385,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "app/assets/javascripts/models/monny_model.js.coffee",
 			"settings":
 			{
-				"buffer_size": 4687,
+				"buffer_size": 5378,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/assets/javascripts/router.js.coffee",
+			"file": "app/assets/javascripts/views/summaryMonth_view.js.coffee",
 			"settings":
 			{
-				"buffer_size": 320,
+				"buffer_size": 1768,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/assets/javascripts/routes/trend_route.js.coffee",
+			"file": "app/assets/javascripts/views/summary_view.js.coffee",
 			"settings":
 			{
-				"buffer_size": 625,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/assets/javascripts/templates/trend.handlebars",
-			"settings":
-			{
-				"buffer_size": 186,
+				"buffer_size": 1675,
 				"line_ending": "Unix"
 			}
 		},
@@ -403,7 +415,15 @@
 			"file": "app/assets/javascripts/views/trend_view.js.coffee",
 			"settings":
 			{
-				"buffer_size": 943,
+				"buffer_size": 1799,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/javascripts/routes/trend_route.js.coffee",
+			"settings":
+			{
+				"buffer_size": 623,
 				"line_ending": "Unix"
 			}
 		},
@@ -411,7 +431,31 @@
 			"file": "app/assets/javascripts/controllers/trend_controller.js.coffee",
 			"settings":
 			{
-				"buffer_size": 574,
+				"buffer_size": 866,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/javascripts/routes/summaryMonth_route.js.coffee",
+			"settings":
+			{
+				"buffer_size": 501,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/api/monny_controller.rb",
+			"settings":
+			{
+				"buffer_size": 1305,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Gemfile",
+			"settings":
+			{
+				"buffer_size": 1594,
 				"line_ending": "Unix"
 			}
 		}
@@ -480,62 +524,80 @@
 	},
 	"file_history":
 	[
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/routes/summary_route.js.coffee",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/routes/summaryMonth_route.js.coffee",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/controllers/month_controller.js.coffee",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/controllers/year_controller.js.coffee",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/month.handlebars",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/year.handlebars",
-		"/Users/weichienhung/Documents/Git/money/config/routes.rb",
-		"/Users/weichienhung/Documents/Git/money/app/models/money_record.rb",
-		"/Users/weichienhung/Documents/Git/money/app/controllers/api/monny_controller.rb",
-		"/Users/weichienhung/Documents/Git/money/app/assets/stylesheets/common.css.scss",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/monthButton.handlebars",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/routes/index_route.js.coffee",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/controllers/summaryMonth_controller.js.coffee",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/views/summaryMonth_view.js.coffee",
+		"/Users/weichienhung/Documents/Git/myfirstgem/MyTemplate.rb",
+		"/Users/weichienhung/Documents/Git/money/config/environments/production.rb",
+		"/Users/weichienhung/Documents/Git/money/config/environments/development.rb",
+		"/Users/weichienhung/Documents/Git/money/app/views/portal/index.html.erb",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/portal.js",
+		"/Users/weichienhung/Documents/Git/money/Gemfile",
+		"/Users/weichienhung/Documents/Git/money/config/application.rb",
+		"/Users/weichienhung/Documents/Git/money/.env",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/models/monny_model.js.coffee",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/views/monthButton_view.js.coffee",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/summary.handlebars",
+		"/Users/weichienhung/Documents/Git/money/app/controllers/api/monny_controller.rb",
+		"/Users/weichienhung/Documents/Git/money/app/models/money_record.rb",
+		"/Users/weichienhung/Documents/Git/money/config/routes.rb",
+		"/Users/weichienhung/Documents/Git/money/app/helpers/application_helper.rb",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/application.handlebars",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/controllers/application_controller.js.coffee",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/views/upload_view.js.coffee",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/loading.handlebars",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/routes/year_route.js.coffee",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/monthButtonLayout.handlebars",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/routes/summary_route.js.coffee",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/routes/index_route.js.coffee",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/routes/loading_route.js.coffee",
+		"/Users/weichienhung/Documents/Git/money/app/assets/stylesheets/common.css.scss",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/controllers/month_controller.js.coffee",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/controllers/summary_controller.js.coffee",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/views/summary_view.js.coffee",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/summaryMonth.handlebars",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/router.js.coffee",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/application.js",
-		"/Users/weichienhung/Documents/Git/money/log/development.log",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/month.handlebars",
+		"/Users/weichienhung/Documents/Git/money/README.rdoc",
+		"/Users/weichienhung/Documents/Git/money/db/seeds.rb",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/routes/month_route.js.coffee",
+		"/Users/weichienhung/Documents/Git/food-ntpc/README.rdoc",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/upload.handlebars",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/summaryMonth.handlebars",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/views/summaryMonth_view.js.coffee",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/year.handlebars",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/views/trend_view.js.coffee",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/controllers/summaryMonth_controller.js.coffee",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/summary.handlebars",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/views/summary_view.js.coffee",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/monthButton.handlebars",
+		"/Users/weichienhung/Documents/Git/money/app/assets/stylesheets/header.css.scss",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/routes/trend_route.js.coffee",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/controllers/trend_controller.js.coffee",
+		"/Users/weichienhung/Documents/Git/money/app/controllers/application_controller.rb",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/views/monthButton_view.js.coffee",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/router.js.coffee",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/trend.handlebars",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/application.js",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/money.js.coffee",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/portal.js.coffee",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/money2.js",
+		"/Users/weichienhung/Documents/Git/money/app/views/layouts/application.html.erb",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/portal.js.coffee.tmp",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/controllers/year_controller.js.coffee",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/routes/summaryMonth_route.js.coffee",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/monthButtonLayout.handlebars",
+		"/Users/weichienhung/Documents/Git/money/log/development.log",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/views/year_view.js.coffee",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/views/lobby_view.js.coffee",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/controllers/index_controller.js.coffee",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/upload.handlebars",
 		"/Users/weichienhung/Documents/Git/money/app/views/api/monny/1summary.json.erb",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/routes/loading_route.js.coffee",
 		"/Users/weichienhung/Documents/Git/money/app/views/api/monny/summary.json.erb",
-		"/Users/weichienhung/Documents/Git/money/Gemfile",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/views/upload_view.js.coffee",
 		"/Users/weichienhung/Documents/Git/money/app/views/api/monny/upload.json.erb",
 		"/Users/weichienhung/Documents/Git/money/app/controllers/portal_controller.rb",
 		"/Users/weichienhung/Documents/Git/money/app/views/portal/category.json.erb",
 		"/Users/weichienhung/Documents/Git/money/db/schema.rb",
 		"/Users/weichienhung/Documents/Git/money/app/models/category.rb",
-		"/Users/weichienhung/Documents/Git/money/db/seeds.rb",
 		"/Users/weichienhung/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/Users/weichienhung/Documents/Git/money/app/views/portal/upload.html.erb",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/money.js.coffee",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/application.handlebars",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/index.handlebars",
-		"/Users/weichienhung/Documents/Git/money/app/views/layouts/application.html.erb",
-		"/Users/weichienhung/Documents/Git/money/app/views/portal/index.html.erb",
 		"/Users/weichienhung/Dropbox/應用程式/Monny/Main Account_2013_09_15(14_49).csv",
 		"/Users/weichienhung/Documents/Git/money/app/models/user.rb",
-		"/Users/weichienhung/Documents/Git/money/config/environments/development.rb",
 		"/Users/weichienhung/Documents/Git/money/.gitignore",
 		"/Users/weichienhung/Documents/Git/money/db/migrate/20130915072939_devise_create_users.rb",
 		"/Users/weichienhung/Documents/Git/money/db/migrate/20130915080341_create_money_records.rb",
 		"/Users/weichienhung/Documents/Git/money/db/migrate/20130915074007_add_confirmable_to_devise.rb",
-		"/Users/weichienhung/Documents/Git/money/config/environments/production.rb",
 		"/Users/weichienhung/Documents/Git/money/config/initializers/devise.rb",
 		"/Users/weichienhung/Documents/Git/money/app/assets/stylesheets/application.css.scss",
 		"/Users/weichienhung/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
@@ -589,25 +651,7 @@
 		"/Users/weichienhung/Documents/Git/groupme/app/models/role.rb",
 		"/Users/weichienhung/Documents/Git/groupme/app/models/user.rb",
 		"/Users/weichienhung/Documents/Git/groupme/db/schema.rb",
-		"/Users/weichienhung/Documents/Git/groupme/README.md",
-		"/Users/weichienhung/Documents/Git/groupme/db/migrate/20130907072335_add_role_id_to_user.rb",
-		"/Users/weichienhung/Documents/Git/groupme/app/helpers/groups_helper.rb",
-		"/Users/weichienhung/Library/Application Support/Sublime Text 2/Packages/JsFormat/Default (OSX).sublime-keymap",
-		"/Users/weichienhung/Library/Application Support/Sublime Text 2/Packages/RubyFormat/RubyFormat.sublime-settings",
-		"/Users/weichienhung/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
-		"/Users/weichienhung/Library/Application Support/Sublime Text 2/Packages/RubyFormat/package-metadata.json",
-		"/Users/weichienhung/Library/Application Support/Sublime Text 2/Packages/RubyFormat/RubyFormat.sublime-commands",
-		"/Users/weichienhung/Library/Application Support/Sublime Text 2/Packages/RubyFormat/ruby_formatter.py",
-		"/Users/weichienhung/Documents/Git/groupme/app/models/post.rb",
-		"/Users/weichienhung/Documents/Git/groupme/app/models/group.rb",
-		"/Users/weichienhung/Documents/Git/groupme/db/migrate/20130818081142_add_user_id_to_group.rb",
-		"/Users/weichienhung/Documents/Git/groupme/db/migrate/20130820134532_create_reply_posts.rb",
-		"/Users/weichienhung/Documents/Git/groupme/config/initializers/omniauth.rb",
-		"/Users/weichienhung/Documents/Git/groupme/app/models/user/omniauth_callbacks.rb",
-		"/Users/weichienhung/Documents/Git/groupme/app/controllers/users/omniauth_callbacks_controller.rb",
-		"/Users/weichienhung/Documents/Git/groupme/app/users/omniauth_callbacks_controller.rb",
-		"/Users/weichienhung/Documents/Git/groupme/app/models/setting.rb",
-		"/Users/weichienhung/Documents/Git/groupme/config/boot.rb"
+		"/Users/weichienhung/Documents/Git/groupme/README.md"
 	],
 	"find":
 	{
@@ -625,6 +669,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"outcome",
 			"secret",
 			"indent",
 			"cancan",
@@ -690,23 +735,22 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/assets/javascripts/models/monny_model.js.coffee",
+					"file": "app/assets/javascripts/controllers/application_controller.js.coffee",
 					"settings":
 					{
-						"buffer_size": 4687,
+						"buffer_size": 1385,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1843,
-								1843
+								0,
+								0
 							]
 						],
 						"settings":
@@ -760,25 +804,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1095.0,
+						"translation.y": 178.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "app/assets/javascripts/router.js.coffee",
+					"file": "app/assets/javascripts/models/monny_model.js.coffee",
 					"settings":
 					{
-						"buffer_size": 320,
+						"buffer_size": 5378,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								315,
-								315
+								2448,
+								3037
 							]
 						],
 						"settings":
@@ -827,7 +871,9 @@
 								"bh_single_quote_open",
 								"bh_single_quote_close"
 							],
-							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage"
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -837,18 +883,18 @@
 				},
 				{
 					"buffer": 2,
-					"file": "app/assets/javascripts/routes/trend_route.js.coffee",
+					"file": "app/assets/javascripts/views/summaryMonth_view.js.coffee",
 					"settings":
 					{
-						"buffer_size": 625,
+						"buffer_size": 1768,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								190,
-								190
+								0,
+								0
 							]
 						],
 						"settings":
@@ -897,7 +943,9 @@
 								"bh_single_quote_open",
 								"bh_single_quote_close"
 							],
-							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage"
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -907,18 +955,18 @@
 				},
 				{
 					"buffer": 3,
-					"file": "app/assets/javascripts/templates/trend.handlebars",
+					"file": "app/assets/javascripts/views/summary_view.js.coffee",
 					"settings":
 					{
-						"buffer_size": 186,
+						"buffer_size": 1675,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								78,
-								78
+								272,
+								272
 							]
 						],
 						"settings":
@@ -967,7 +1015,9 @@
 								"bh_single_quote_open",
 								"bh_single_quote_close"
 							],
-							"syntax": "Packages/Handlebars/Handlebars.tmLanguage"
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -980,15 +1030,15 @@
 					"file": "app/assets/javascripts/views/trend_view.js.coffee",
 					"settings":
 					{
-						"buffer_size": 943,
+						"buffer_size": 1799,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								453,
-								453
+								1334,
+								1334
 							]
 						],
 						"settings":
@@ -1037,7 +1087,81 @@
 								"bh_single_quote_open",
 								"bh_single_quote_close"
 							],
-							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage"
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/assets/javascripts/routes/trend_route.js.coffee",
+					"settings":
+					{
+						"buffer_size": 623,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								623
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1046,19 +1170,91 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "app/assets/javascripts/controllers/trend_controller.js.coffee",
 					"settings":
 					{
-						"buffer_size": 574,
+						"buffer_size": 866,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								574,
-								574
+								0,
+								141
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 18.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/assets/javascripts/routes/summaryMonth_route.js.coffee",
+					"settings":
+					{
+						"buffer_size": 501,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								162,
+								162
 							]
 						],
 						"settings":
@@ -1113,6 +1309,148 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/controllers/api/monny_controller.rb",
+					"settings":
+					{
+						"buffer_size": 1305,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								271,
+								271
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "Gemfile",
+					"settings":
+					{
+						"buffer_size": 1594,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								943,
+								866
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 30.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1162,19 +1500,191 @@
 		"selected_items":
 		[
 			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"monn",
+				"app/controllers/api/monny_controller.rb"
+			],
+			[
+				"summ",
+				"app/assets/javascripts/routes/summaryMonth_route.js.coffee"
+			],
+			[
+				"trendcontro",
+				"app/assets/javascripts/controllers/trend_controller.js.coffee"
+			],
+			[
+				"trerou",
+				"app/assets/javascripts/routes/trend_route.js.coffee"
+			],
+			[
+				"tren",
+				"app/assets/javascripts/views/trend_view.js.coffee"
+			],
+			[
+				"mom",
+				"app/assets/javascripts/models/monny_model.js.coffee"
+			],
+			[
+				"rappi",
+				"app/assets/javascripts/controllers/application_controller.js.coffee"
+			],
+			[
 				"route",
 				"config/routes.rb"
 			],
 			[
-				"mon",
+				"mone",
 				"app/models/money_record.rb"
 			],
 			[
-				"monny",
+				"mon",
 				"app/controllers/api/monny_controller.rb"
 			],
 			[
-				"monn",
+				"monmod",
+				"app/assets/javascripts/models/monny_model.js.coffee"
+			],
+			[
+				".env",
+				".env"
+			],
+			[
+				"application.rb",
+				"config/application.rb"
+			],
+			[
+				"spplirb",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"deve",
+				"config/environments/development.rb"
+			],
+			[
+				"produ",
+				"config/environments/production.rb"
+			],
+			[
+				"ge",
+				"Gemfile"
+			],
+			[
+				"uplo",
+				"app/assets/javascripts/views/upload_view.js.coffee"
+			],
+			[
+				"monmo",
+				"app/assets/javascripts/models/monny_model.js.coffee"
+			],
+			[
+				"monm",
+				"app/assets/javascripts/models/monny_model.js.coffee"
+			],
+			[
+				"appcon",
+				"app/assets/javascripts/controllers/application_controller.js.coffee"
+			],
+			[
+				"applihand",
+				"app/assets/javascripts/templates/application.handlebars"
+			],
+			[
+				"monre",
+				"app/models/money_record.rb"
+			],
+			[
+				"inde",
+				"app/assets/javascripts/routes/index_route.js.coffee"
+			],
+			[
+				"ye",
+				"app/assets/javascripts/routes/year_route.js.coffee"
+			],
+			[
+				"appcontr",
+				"app/assets/javascripts/controllers/application_controller.js.coffee"
+			],
+			[
+				"monthroute",
+				"app/assets/javascripts/routes/month_route.js.coffee"
+			],
+			[
+				"seed",
+				"db/seeds.rb"
+			],
+			[
+				"apphand",
+				"app/assets/javascripts/templates/application.handlebars"
+			],
+			[
+				"monhan",
+				"app/assets/javascripts/templates/month.handlebars"
+			],
+			[
+				"sumcon",
+				"app/assets/javascripts/controllers/summary_controller.js.coffee"
+			],
+			[
+				"monthcon",
+				"app/assets/javascripts/controllers/month_controller.js.coffee"
+			],
+			[
+				"upload",
+				"app/assets/javascripts/views/upload_view.js.coffee"
+			],
+			[
+				"moncon",
+				"app/assets/javascripts/controllers/month_controller.js.coffee"
+			],
+			[
+				"yeha",
+				"app/assets/javascripts/templates/year.handlebars"
+			],
+			[
+				"monha",
+				"app/assets/javascripts/templates/month.handlebars"
+			],
+			[
+				"appha",
+				"app/assets/javascripts/templates/application.handlebars"
+			],
+			[
+				"trevie",
+				"app/assets/javascripts/views/trend_view.js.coffee"
+			],
+			[
+				"year",
+				"app/assets/javascripts/templates/year.handlebars"
+			],
+			[
+				"mmode",
+				"app/assets/javascripts/models/monny_model.js.coffee"
+			],
+			[
+				"applicont",
+				"app/assets/javascripts/controllers/application_controller.js.coffee"
+			],
+			[
+				"applicon",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"monnymod",
+				"app/assets/javascripts/models/monny_model.js.coffee"
+			],
+			[
+				"y",
+				"app/assets/javascripts/templates/year.handlebars"
+			],
+			[
+				"appli",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"monny",
 				"app/controllers/api/monny_controller.rb"
 			],
 			[
@@ -1182,16 +1692,8 @@
 				"app/assets/javascripts/router.js.coffee"
 			],
 			[
-				"year",
-				"app/assets/javascripts/templates/year.handlebars"
-			],
-			[
 				"model",
 				"app/assets/javascripts/models/monny_model.js.coffee"
-			],
-			[
-				"summ",
-				"app/assets/javascripts/routes/summary_route.js.coffee"
 			],
 			[
 				"de",
@@ -1202,20 +1704,8 @@
 				"app/models/money_record.rb"
 			],
 			[
-				"gem",
-				"Gemfile"
-			],
-			[
-				"deve",
-				"log/development.log"
-			],
-			[
 				"sche",
 				"db/schema.rb"
-			],
-			[
-				"seed",
-				"db/seeds.rb"
 			],
 			[
 				"rout",
@@ -1250,16 +1740,8 @@
 				"config/initializers/devise.rb"
 			],
 			[
-				"appli",
-				"app/assets/stylesheets/application.css"
-			],
-			[
 				"session",
 				"config/initializers/session_store.rb"
-			],
-			[
-				"produ",
-				"config/environments/production.rb"
 			],
 			[
 				"hero",
@@ -1284,10 +1766,6 @@
 			[
 				"applica",
 				"app/assets/javascripts/application.js"
-			],
-			[
-				".env",
-				".env"
 			],
 			[
 				"secr",
@@ -1514,10 +1992,6 @@
 				"app/models/user.rb"
 			],
 			[
-				"inde",
-				"app/views/bookmarks/index.html.erb"
-			],
-			[
 				"aut",
 				"app/models/authorization.rb"
 			],
@@ -1536,142 +2010,6 @@
 			[
 				"_",
 				"app/views/bookmarks/_inputform.html.erb"
-			],
-			[
-				"ind",
-				"app/views/bookmarks/index.html.erb"
-			],
-			[
-				"app",
-				"app/assets/stylesheets/application.css"
-			],
-			[
-				"index",
-				"app/views/bookmarks/index.html.erb"
-			],
-			[
-				"bokmark",
-				"app/controllers/bookmarks_controller.rb"
-			],
-			[
-				"edit",
-				"app/views/bookmarks/edit.html.erb"
-			],
-			[
-				"input",
-				"app/views/bookmarks/_inputform.html.erb"
-			],
-			[
-				"application.",
-				"app/views/layouts/application.html.erb"
-			],
-			[
-				"bookmarks.c",
-				"app/assets/stylesheets/bookmarks.css.scss"
-			],
-			[
-				"application",
-				"app/views/layouts/application.html.erb.bak"
-			],
-			[
-				"bookmarks",
-				"app/controllers/bookmarks_controller.rb"
-			],
-			[
-				"cof",
-				"js/config.js"
-			],
-			[
-				"info",
-				"js/components/infoPanel.component.js"
-			],
-			[
-				"dash",
-				"css/components/dashboard.css"
-			],
-			[
-				"main",
-				"js/main.js"
-			],
-			[
-				"config.",
-				"js/config.js"
-			],
-			[
-				"sto",
-				"js/components/store.component.js"
-			],
-			[
-				"tv.css",
-				"css/tv/tv.css"
-			],
-			[
-				"conf",
-				"js/config.js"
-			],
-			[
-				"con",
-				"js/config.js"
-			],
-			[
-				"tick",
-				"css/components/ticketWindow.css"
-			],
-			[
-				"det",
-				"js/components/detail.component.js"
-			],
-			[
-				"lo",
-				"js/components/lobby.component.js"
-			],
-			[
-				"tvop",
-				"js/tv/tvOptimizer.js"
-			],
-			[
-				"ma",
-				"js/main.js"
-			],
-			[
-				"play",
-				"js/components/play.component.js"
-			],
-			[
-				"ticke",
-				"js/components/ticketWindow.component.js"
-			],
-			[
-				"index.",
-				"js/view/index.view.js"
-			],
-			[
-				"sh",
-				"emberdemo/css/modules/shapes.css"
-			],
-			[
-				"slider",
-				"storefront/js/vendor/slides.jquery.js"
-			],
-			[
-				"dot",
-				"emberdemo/js/views/dotdotdot.view.js"
-			],
-			[
-				"cdot",
-				"storefront/js/controllers/dashboard.controller.js"
-			],
-			[
-				"menu",
-				"emberdemo/js/templates/menubar.template.js"
-			],
-			[
-				"land",
-				"storefront/landing.html"
-			],
-			[
-				"shp",
-				"emberdemo/css/modules/shapes.css"
 			]
 		],
 		"width": 0.0

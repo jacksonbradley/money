@@ -24,3 +24,8 @@ Category.create([
 { name: '其他3', cid: 16},
 ])
 
+demo = User.new
+demo.email = 'demo@example.com'
+demo.password = 'a1234567'
+demo.confirmed_at = "2013-10-02 00:00:00"
+demo.save!
