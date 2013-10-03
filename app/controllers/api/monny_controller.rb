@@ -1,6 +1,9 @@
 class Api::MonnyController < ApplicationController
   before_filter :authenticate_user!
   respond_to :json
+  # def default_serializer_options
+  #   {root: false}
+  # end
 
   def upload
     Rails.logger.debug {(current_user.to_yaml)}
@@ -22,6 +25,7 @@ class Api::MonnyController < ApplicationController
         :month => data[4],
         :year => data[5],
       })
+
       record.save
     end
   end
@@ -32,7 +36,7 @@ class Api::MonnyController < ApplicationController
   end
 
   def category
-    respond_with Category.all
+    respond_with Category.all #, root:false
   end
 
   def summary

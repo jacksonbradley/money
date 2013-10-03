@@ -189,6 +189,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  active_model_serializers
   anjlab-bootstrap-rails!
   coffee-rails (~> 4.0.0)
   devise (~> 3.1.0)
