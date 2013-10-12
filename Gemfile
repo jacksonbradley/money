@@ -32,6 +32,8 @@ gem 'ember-source', '1.0.0'
 
 gem "highcharts-rails", "~> 3.0.0"
 gem "yard"
+gem "versionist", "~> 1.2.1"
+gem 'active_model_serializers'
 
 group :development do
   gem "powder"

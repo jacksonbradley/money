@@ -6,14 +6,28 @@ Money::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
   root 'portal#index'
-  namespace :api do
-    post 'upload' => 'monny#upload'
-    get 'list' => 'monny#list'
-    get 'query' => 'monny#query'
-    get 'summary' => 'monny#summary'
-    get 'trend' => 'monny#trend'
-    get 'category' => 'monny#category'
+
+  ## versioning by path
+  api_version(module: "Api", path: { value: "api" }, defaults: { format: 'json' }) do
+    # namespace :api , defaults: {format: 'json'} do
+      post 'upload' => 'monny#upload'
+      get 'list' => 'monny#list'
+      get 'query' => 'monny#query'
+      get 'summary' => 'monny#summary'
+      get 'trend' => 'monny#trend'
+      get 'category' => 'monny#category'
+    # end
   end
+  
+  ## versioning by header
+  # api_version(module: "Api", default: true, header: { name: "Accept", value: "application/monny.v1" }, defaults: { format: 'json' }) do
+  #   post 'upload' => 'monny#upload'
+  #   get 'list' => 'monny#list'
+  #   get 'query' => 'monny#query'
+  #   get 'summary' => 'monny#summary'
+  #   get 'trend' => 'monny#trend'
+  #   get 'category' => 'monny#category'
+  # end
   
 
   # Example of regular route:

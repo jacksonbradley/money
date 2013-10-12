@@ -4,10 +4,10 @@ class MoneyRecord < ActiveRecord::Base
   # default_scope { order("year DESC, month ASC, day ASC") }
   scope :expense, -> { where.not(category_id: 0) }
 
-  def as_json(options = {})
-    super(only: [:id, :amount, :category_id, :description,
-                 :day, :month, :year, :total])
-  end
+  # def as_json(options = {})
+  #   super(only: [:id, :amount, :category_id, :description,
+  #                :day, :month, :year, :total])
+  # end
 
   def self.list_month(params)
     if params[:y].present?
