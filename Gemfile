@@ -17,6 +17,14 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+group :test do
+  gem "rspec-rails"
+  gem 'cucumber-rails', :require => false
+  gem "factory_girl_rails"
+  gem 'database_cleaner'
+  gem "capybara"
+  # gem 'httparty'
+end
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -36,6 +44,7 @@ gem "versionist", "~> 1.2.1"
 gem 'active_model_serializers'
 
 group :development do
+  gem "rspec-rails"
   gem "powder"
   gem 'dotenv-rails'
   gem 'sqlite3'
