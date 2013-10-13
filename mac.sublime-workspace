@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"re",
+				"response"
+			],
+			[
+				"api",
+				"api_category_path"
+			],
+			[
+				"cate",
+				"categories"
+			],
+			[
+				"cre",
+				"create_record"
+			],
+			[
 				"pass",
 				"password_field"
 			],
@@ -18,10 +34,6 @@
 			[
 				"tr",
 				"transitionToRoute"
-			],
-			[
-				"cate",
-				"category"
 			],
 			[
 				"mo",
@@ -110,10 +122,6 @@
 			[
 				"Lo",
 				"LobbyRoute"
-			],
-			[
-				"re",
-				"records"
 			],
 			[
 				"am",
@@ -388,26 +396,58 @@
 	"buffers":
 	[
 		{
-			"file": "config/routes.rb",
+			"file": "features/api.feature",
 			"settings":
 			{
-				"buffer_size": 1905,
+				"buffer_size": 4004,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/layouts/application.html.erb",
+			"file": "features/step_definitions/api_steps.rb",
 			"settings":
 			{
-				"buffer_size": 999,
+				"buffer_size": 2497,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Gemfile",
+			"file": "features/sign_in.feature-tmp",
 			"settings":
 			{
-				"buffer_size": 1594,
+				"buffer_size": 1011,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/factories/users.rb",
+			"settings":
+			{
+				"buffer_size": 178,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/application.rb",
+			"settings":
+			{
+				"buffer_size": 1316,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/spec_helper.rb",
+			"settings":
+			{
+				"buffer_size": 1853,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "spec/support/devise.rb",
+			"settings":
+			{
+				"buffer_size": 96,
 				"line_ending": "Unix"
 			}
 		}
@@ -476,9 +516,41 @@
 	},
 	"file_history":
 	[
+		"/Users/weichienhung/Documents/Git/money/features/step_definitions/users_steps.rb",
 		"/Users/weichienhung/Documents/Git/money/db/seeds.rb",
-		"/Users/weichienhung/Documents/Git/money/app/views/devise/sessions/new.html.erb",
+		"/Users/weichienhung/Documents/Git/money/Gemfile",
+		"/Users/weichienhung/Documents/Git/money/app/models/money_record.rb",
+		"/Users/weichienhung/Documents/Git/money/app/controllers/api/monny_controller.rb",
+		"/Users/weichienhung/Documents/Git/money/output.txt",
+		"/Users/weichienhung/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/weichienhung/Documents/Git/money/config/initializers/devise.rb",
 		"/Users/weichienhung/Documents/Git/money/app/models/user.rb",
+		"/Users/weichienhung/Documents/Git/money/config/application.rb",
+		"/Users/weichienhung/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/weichienhung/Documents/Git/money/spec/factories/users.rb",
+		"/Users/weichienhung/Documents/Git/money/db/schema.rb",
+		"/Users/weichienhung/Documents/Git/money/features/step_definitions/list_steps.rb",
+		"/Users/weichienhung/Documents/Git/money/config/routes.rb",
+		"/Users/weichienhung/Documents/Git/money/spec/spec_helper.rb",
+		"/Users/weichienhung/Documents/Git/money/spec/support/devise.rb",
+		"/Users/weichienhung/Documents/Git/money/features/api.feature",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/routes/index_route.js.coffee",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/routes/loading_route.js.coffee",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/routes/summary_route.js.coffee",
+		"/Users/weichienhung/Documents/Git/money/app/serializers/category_serializer.rb",
+		"/Users/weichienhung/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/weichienhung/Documents/Git/money/app/helpers/application_helper.rb",
+		"/Users/weichienhung/Documents/Git/money/app/controllers/portal_controller.rb",
+		"/Users/weichienhung/Documents/Git/money/app/helpers/portal_helper.rb",
+		"/Users/weichienhung/Documents/Git/money/app/helpers/api/monny_helper.rb",
+		"/Users/weichienhung/Documents/Git/money/app/models/category.rb",
+		"/Users/weichienhung/Documents/Git/money/Gemfile.lock",
+		"/Users/weichienhung/Documents/Git/money/log/development.log",
+		"/Users/weichienhung/Documents/Git/money/app/serializers/money_record_serializer.rb",
+		"/Users/weichienhung/Documents/Git/money/rubocop-todo.yml",
+		"/Users/weichienhung/Documents/Git/money/app/controllers/application_controller.rb",
+		"/Users/weichienhung/Documents/Git/money/app/views/layouts/application.html.erb",
+		"/Users/weichienhung/Documents/Git/money/app/views/devise/sessions/new.html.erb",
 		"/Users/weichienhung/Documents/Git/money/db/sample.csv",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/views/trend_view.js.coffee",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/controllers/application_controller.js.coffee",
@@ -488,25 +560,16 @@
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/routes/trend_route.js.coffee",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/controllers/trend_controller.js.coffee",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/routes/summaryMonth_route.js.coffee",
-		"/Users/weichienhung/Documents/Git/money/app/controllers/api/monny_controller.rb",
-		"/Users/weichienhung/Documents/Git/money/Gemfile",
 		"/Users/weichienhung/Documents/Git/myfirstgem/MyTemplate.rb",
 		"/Users/weichienhung/Documents/Git/money/config/environments/production.rb",
 		"/Users/weichienhung/Documents/Git/money/config/environments/development.rb",
 		"/Users/weichienhung/Documents/Git/money/app/views/portal/index.html.erb",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/portal.js",
-		"/Users/weichienhung/Documents/Git/money/config/application.rb",
 		"/Users/weichienhung/Documents/Git/money/.env",
-		"/Users/weichienhung/Documents/Git/money/app/models/money_record.rb",
-		"/Users/weichienhung/Documents/Git/money/config/routes.rb",
-		"/Users/weichienhung/Documents/Git/money/app/helpers/application_helper.rb",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/application.handlebars",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/views/upload_view.js.coffee",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/loading.handlebars",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/routes/year_route.js.coffee",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/routes/summary_route.js.coffee",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/routes/index_route.js.coffee",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/routes/loading_route.js.coffee",
 		"/Users/weichienhung/Documents/Git/money/app/assets/stylesheets/common.css.scss",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/controllers/month_controller.js.coffee",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/controllers/summary_controller.js.coffee",
@@ -521,7 +584,6 @@
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/summary.handlebars",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/monthButton.handlebars",
 		"/Users/weichienhung/Documents/Git/money/app/assets/stylesheets/header.css.scss",
-		"/Users/weichienhung/Documents/Git/money/app/controllers/application_controller.rb",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/views/monthButton_view.js.coffee",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/router.js.coffee",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/trend.handlebars",
@@ -529,22 +591,16 @@
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/money.js.coffee",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/portal.js.coffee",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/money2.js",
-		"/Users/weichienhung/Documents/Git/money/app/views/layouts/application.html.erb",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/portal.js.coffee.tmp",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/controllers/year_controller.js.coffee",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/monthButtonLayout.handlebars",
-		"/Users/weichienhung/Documents/Git/money/log/development.log",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/views/year_view.js.coffee",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/views/lobby_view.js.coffee",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/controllers/index_controller.js.coffee",
 		"/Users/weichienhung/Documents/Git/money/app/views/api/monny/1summary.json.erb",
 		"/Users/weichienhung/Documents/Git/money/app/views/api/monny/summary.json.erb",
 		"/Users/weichienhung/Documents/Git/money/app/views/api/monny/upload.json.erb",
-		"/Users/weichienhung/Documents/Git/money/app/controllers/portal_controller.rb",
 		"/Users/weichienhung/Documents/Git/money/app/views/portal/category.json.erb",
-		"/Users/weichienhung/Documents/Git/money/db/schema.rb",
-		"/Users/weichienhung/Documents/Git/money/app/models/category.rb",
-		"/Users/weichienhung/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 		"/Users/weichienhung/Documents/Git/money/app/views/portal/upload.html.erb",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/index.handlebars",
 		"/Users/weichienhung/Dropbox/應用程式/Monny/Main Account_2013_09_15(14_49).csv",
@@ -552,7 +608,6 @@
 		"/Users/weichienhung/Documents/Git/money/db/migrate/20130915072939_devise_create_users.rb",
 		"/Users/weichienhung/Documents/Git/money/db/migrate/20130915080341_create_money_records.rb",
 		"/Users/weichienhung/Documents/Git/money/db/migrate/20130915074007_add_confirmable_to_devise.rb",
-		"/Users/weichienhung/Documents/Git/money/config/initializers/devise.rb",
 		"/Users/weichienhung/Documents/Git/money/app/assets/stylesheets/application.css.scss",
 		"/Users/weichienhung/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/Users/weichienhung/Documents/Git/groupme/config/initializers/session_store.rb",
@@ -588,22 +643,7 @@
 		"/Users/weichienhung/Documents/Git/groupme/app/views/posts/_inputform.html.erb",
 		"/Users/weichienhung/Documents/Git/groupme/app/views/account/posts/index.html.erb",
 		"/Users/weichienhung/Documents/Git/groupme/app/views/groups/_inputform.html.erb",
-		"/Users/weichienhung/Documents/Git/groupme/app/views/common/_menu.html.erb",
-		"/Users/weichienhung/Documents/Git/groupme/app/assets/stylesheets/bootstrap-setting.css.scss",
-		"/Users/weichienhung/Documents/Git/groupme/app/views/common/_user_nav.html.erb",
-		"/Users/weichienhung/Documents/Git/groupme/app/assets/stylesheets/application.css.scss",
-		"/Users/weichienhung/Documents/Git/groupme/app/assets/stylesheets/groups.css.scss",
-		"/Users/weichienhung/Documents/Git/groupme/app/controllers/application_controller.rb",
-		"/Users/weichienhung/Documents/Git/groupme/config/locales/en.yml",
-		"/Users/weichienhung/Documents/Git/groupme/config/locales/zh_tw.yml",
-		"/Users/weichienhung/Documents/Git/groupme/app/controllers/locale_controller.rb",
-		"/Users/weichienhung/Documents/Git/groupme/app/views/account/groups/index.html.erb",
-		"/Users/weichienhung/Documents/Git/groupme/config/locales/devise.zh_tw.yml",
-		"/Users/weichienhung/Documents/Git/groupme/app/controllers/groups_controller.rb",
-		"/Users/weichienhung/Documents/Git/groupme/app/views/groups/edit.html.erb",
-		"/Users/weichienhung/Documents/Git/groupme/app/views/groups/new.html.erb",
-		"/Users/weichienhung/Documents/Git/groupme/app/models/role.rb",
-		"/Users/weichienhung/Documents/Git/groupme/app/models/user.rb"
+		"/Users/weichienhung/Documents/Git/groupme/app/views/common/_menu.html.erb"
 	],
 	"find":
 	{
@@ -621,6 +661,18 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"create_unconfirmed_user",
+			"I return to the site",
+			"ctrl+g",
+			"goto",
+			"+g",
+			"delete",
+			"name",
+			"path_to",
+			"ctrl+alt",
+			"js_format",
+			"js",
+			"result",
 			"outcome",
 			"secret",
 			"indent",
@@ -687,23 +739,95 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "config/routes.rb",
+					"file": "features/api.feature",
 					"settings":
 					{
-						"buffer_size": 1905,
+						"buffer_size": 4004,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								556,
-								556
+								0,
+								538
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/cucumber/Cucumber Plain Text Feature.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "features/step_definitions/api_steps.rb",
+					"settings":
+					{
+						"buffer_size": 2497,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								526,
+								526
 							]
 						],
 						"settings":
@@ -757,25 +881,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 643.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "app/views/layouts/application.html.erb",
+					"buffer": 2,
+					"file": "features/sign_in.feature-tmp",
 					"settings":
 					{
-						"buffer_size": 999,
+						"buffer_size": 1011,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								521,
-								521
+								441,
+								441
 							]
 						],
 						"settings":
@@ -824,7 +948,7 @@
 								"bh_single_quote_open",
 								"bh_single_quote_close"
 							],
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"syntax": "Packages/cucumber/Cucumber Plain Text Feature.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -835,19 +959,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "Gemfile",
+					"buffer": 3,
+					"file": "spec/factories/users.rb",
 					"settings":
 					{
-						"buffer_size": 1594,
+						"buffer_size": 178,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								147,
+								168
 							]
 						],
 						"settings":
@@ -898,8 +1022,222 @@
 							],
 							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
-						"translation.x": 1.0,
-						"translation.y": 291.0,
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "config/application.rb",
+					"settings":
+					{
+						"buffer_size": 1316,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1033,
+								1033
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "spec/spec_helper.rb",
+					"settings":
+					{
+						"buffer_size": 1853,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1644,
+								1848
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 358.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "spec/support/devise.rb",
+					"settings":
+					{
+						"buffer_size": 96,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2,
+								96
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -949,24 +1287,84 @@
 		"selected_items":
 		[
 			[
+				"appli",
+				"config/application.rb"
+			],
+			[
+				"out",
+				"output.txt"
+			],
+			[
+				"monn",
+				"app/controllers/api/monny_controller.rb"
+			],
+			[
+				"mon",
+				"app/models/money_record.rb"
+			],
+			[
 				"gem",
 				"Gemfile"
 			],
 			[
-				"applicaht",
-				"app/views/layouts/application.html.erb"
+				"seed",
+				"db/seeds.rb"
+			],
+			[
+				"devise",
+				"config/initializers/devise.rb"
+			],
+			[
+				"schema",
+				"db/schema.rb"
+			],
+			[
+				"user",
+				"app/models/user.rb"
+			],
+			[
+				"moneyreo",
+				"app/models/money_record.rb"
 			],
 			[
 				"route",
 				"config/routes.rb"
 			],
 			[
-				"seed.",
-				"db/seeds.rb"
+				"moncon",
+				"app/controllers/api/monny_controller.rb"
 			],
 			[
-				"monn",
+				"de",
+				"log/development.log"
+			],
+			[
+				"cate",
+				"app/models/category.rb"
+			],
+			[
+				"port",
+				"app/controllers/portal_controller.rb"
+			],
+			[
+				"catego",
+				"app/models/category.rb"
+			],
+			[
+				"deve",
+				"log/development.log"
+			],
+			[
+				"monncon",
 				"app/controllers/api/monny_controller.rb"
+			],
+			[
+				"applicaht",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"seed.",
+				"db/seeds.rb"
 			],
 			[
 				"summ",
@@ -997,10 +1395,6 @@
 				"app/models/money_record.rb"
 			],
 			[
-				"mon",
-				"app/controllers/api/monny_controller.rb"
-			],
-			[
 				"monmod",
 				"app/assets/javascripts/models/monny_model.js.coffee"
 			],
@@ -1015,10 +1409,6 @@
 			[
 				"spplirb",
 				"app/helpers/application_helper.rb"
-			],
-			[
-				"deve",
-				"config/environments/development.rb"
 			],
 			[
 				"produ",
@@ -1069,10 +1459,6 @@
 				"app/assets/javascripts/routes/month_route.js.coffee"
 			],
 			[
-				"seed",
-				"db/seeds.rb"
-			],
-			[
 				"apphand",
 				"app/assets/javascripts/templates/application.handlebars"
 			],
@@ -1091,10 +1477,6 @@
 			[
 				"upload",
 				"app/assets/javascripts/views/upload_view.js.coffee"
-			],
-			[
-				"moncon",
-				"app/assets/javascripts/controllers/month_controller.js.coffee"
 			],
 			[
 				"yeha",
@@ -1137,10 +1519,6 @@
 				"app/assets/javascripts/templates/year.handlebars"
 			],
 			[
-				"appli",
-				"app/views/layouts/application.html.erb"
-			],
-			[
 				"monny",
 				"app/controllers/api/monny_controller.rb"
 			],
@@ -1151,10 +1529,6 @@
 			[
 				"model",
 				"app/assets/javascripts/models/monny_model.js.coffee"
-			],
-			[
-				"de",
-				"log/development.log"
 			],
 			[
 				"money",
@@ -1179,10 +1553,6 @@
 			[
 				"d",
 				"config/environments/development.rb"
-			],
-			[
-				"user",
-				"app/models/user.rb"
 			],
 			[
 				"porta",
@@ -1345,10 +1715,6 @@
 				"config/initializers/secret_token.rb"
 			],
 			[
-				"devise",
-				"config/initializers/devise.rb"
-			],
-			[
 				"grou",
 				"app/controllers/groups_controller.rb"
 			],
@@ -1431,34 +1797,6 @@
 			[
 				"da",
 				"config/database.yml"
-			],
-			[
-				"au",
-				"app/models/authorization.rb"
-			],
-			[
-				"auth",
-				"app/models/authorization.rb"
-			],
-			[
-				"us",
-				"app/models/user.rb"
-			],
-			[
-				"aut",
-				"app/models/authorization.rb"
-			],
-			[
-				"routes.",
-				"config/routes.rb"
-			],
-			[
-				"new.",
-				"app/views/devise/sessions/new.html.erb"
-			],
-			[
-				"routes",
-				"config/routes.rb"
 			]
 		],
 		"width": 0.0

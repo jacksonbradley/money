@@ -229,7 +229,6 @@ PLATFORMS
 DEPENDENCIES
   active_model_serializers
   anjlab-bootstrap-rails!
-  capybara
   coffee-rails (~> 4.0.0)
   cucumber-rails
   database_cleaner
