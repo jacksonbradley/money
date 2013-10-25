@@ -18,7 +18,7 @@ end
 def create_user
   create_visitor
   delete_user
-  @visitor[:confirmed_at] = Time.now
+  # @visitor[:confirmed_at] = Time.now
   @user = FactoryGirl.create(:user, @visitor)
 end
 

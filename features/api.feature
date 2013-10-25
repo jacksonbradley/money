@@ -53,9 +53,9 @@ Feature: Provide API
     Then should response correct category JSON data
       """
       {"monny":[
-      {"id":1,"amount":150,"category_id":1,"description":"dinner",
+      {"amount":150,"category_id":1,"description":"dinner",
       "day":2,"month":11,"year":2013},
-      {"id":2,"amount":150,"category_id":1,"description":"dinner",
+      {"amount":150,"category_id":1,"description":"dinner",
       "day":3,"month":11,"year":2013}
       ]}
       """

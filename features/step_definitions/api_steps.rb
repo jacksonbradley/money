@@ -7,7 +7,7 @@ end
 def create_user
   create_visitor
   delete_user
-  @visitor[:confirmed_at] = Time.now
+  # @visitor[:confirmed_at] = Time.now
   @user = FactoryGirl.create(:user, @visitor)
 end
 
@@ -83,9 +83,11 @@ When /^I send a GET request to trend year (\d+) api$/ do |year|
 end
 
 Then /^should response correct category JSON data$/ do |expect|
-  # puts @response.body
-  assert_equal expect.gsub(/\n/,''), @response.body
-  # category = JSON.parse(@response.body)
+  actual = JSON.parse(@response.body)
+  expect = JSON.parse(expect)
+  expect.each do |key,value|
+    assert_equal value, actual[key]
+  end
   # category["monny"].each do |item|
   #   assert_equal item['name'], '食' if item['cid'] == 1
   #   assert_equal item['name'], '交際娛樂' if item['cid'] == 2

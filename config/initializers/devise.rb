@@ -4,7 +4,7 @@ Devise.setup do |config|
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
-  config.secret_key = '9c5cd5d71567302311c61622761bb081ec83c4ace910673cd98ff25d69ec9b9cb688eecfc1bfc656eb25ec2d5a4cb7bd5a9d23eb72137a2d0f1b43195d9c12da'
+  config.secret_key = 'fbe3fe6188436321863fba02241c1ecdfec9938419eaed3efa13536e73349a459f1fc5cf00ce3a076b2bf6a6c0223a49a9133fb04e6f50f1e74ec69d18fd22e3'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -19,7 +19,7 @@ Devise.setup do |config|
   # Load and configure the ORM. Supports :active_record (default) and
   # :mongoid (bson_ext recommended) by default. Other ORMs may be
   # available as additional gems.
-  require 'devise/orm/active_record'
+  require 'devise/orm/mongoid'
 
   # ==> Configuration for any authentication mechanism
   # Configure which keys are used when authenticating a user. The default is
@@ -98,7 +98,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = '18b1a373ccfb16fb802dd6b7ef195a5ef60e804c2eebb4f5157b1cea0c6c6819d2656bdc81a357d114e5a6f14d9f3fedfb96aa61da087368afc1179d0b8ea953'
+  # config.pepper = 'cbb1a70d481c9801d215f5336cc71b485d7ada12db71191ec733550f57884c10f4c139210105830c92a7a7f57092fdb91a625e626bb84655764bf77ce9539800'
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
@@ -226,8 +226,9 @@ Devise.setup do |config|
   # config.navigational_formats = ['*/*', :html]
 
   # The default HTTP method used to sign out a resource. Default is :delete.
+  # config.sign_out_via = :delete
   config.sign_out_via = Rails.env.test? ? :get : :delete
-
+  
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.

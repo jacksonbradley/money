@@ -9,7 +9,8 @@ class MoneyRecordSerializer < ActiveModel::Serializer
   def attributes
     # Rails.logger.debug { options.to_yaml }
     # Rails.logger.debug { super.to_yaml }
-    # Rails.logger.debug { self._attributes }
+    # Rails.logger.debug { object.attributes }
+    # Rails.logger.debug { _attributes }
     # data = super
     data = {}
 
