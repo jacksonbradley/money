@@ -1,5 +1,6 @@
 Money.SummaryMonthView = Ember.View.extend
   templateName: 'summaryMonth'
+  elementReady: false
   dataReadyBinding: 'controller.isReadyToDraw'
 
   init: ->
@@ -7,9 +8,9 @@ Money.SummaryMonthView = Ember.View.extend
     console.log 'SummaryMonthView init'
 
   drawPieChart: ( ->
-    if @get('dataReady')
+    if @get('dataReady') and @get('elementReady')
       console.log "drawPieChart in SummaryMonthView"
-      monthFullName = @get 'controller.model.monthFullName'
+      monthFullName = @get 'controller.model.id'
       series = (@get 'controller').pieChartData()
       # chartId = "#"+@get('controller.chartId')
       # if @get('controller.chartCounter') >= 2
@@ -50,10 +51,11 @@ Money.SummaryMonthView = Ember.View.extend
       # chart = new Highcharts.Chart(options)
       )
 
-  ).observes('dataReady')
+  ).observes('dataReady', 'elementReady')
 
   didInsertElement: ->
     console.log "didInsertElement in SummaryMonthView"
+    @set 'elementReady', true
 
   # willClearRender: ->
   #   console.log "willDestroyElement in SummaryMonthView"

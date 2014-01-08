@@ -24,8 +24,8 @@
       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown">Select <b class="caret"></b></a>
         <ul class="dropdown-menu">
-          {{#each year in listYear}}
-            <li><a {{action 'toList' year}}>{{year}}</a></li>
+          {{#each record in listYear}}
+            <li><a {{action 'toList' record.year}}>{{record.year}}</a></li>
           {{/each}}
         </ul>
       </li>

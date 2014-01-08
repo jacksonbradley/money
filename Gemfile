@@ -18,12 +18,16 @@ gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 group :test do
-  gem "rspec-rails"
   gem 'cucumber-rails', :require => false
   gem "factory_girl_rails"
   gem 'database_cleaner'
   # gem "capybara"
   # gem 'httparty'
+end
+
+group :test, :development do
+  gem "rspec-rails"
+
 end
 
 # Use jquery as the JavaScript library
@@ -36,7 +40,8 @@ gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
 gem "omniauth"
 gem "omniauth-facebook"
 gem 'ember-rails'
-gem 'ember-source', '1.0.0'
+gem 'ember-data-source', '1.0.0.beta4'
+gem 'ember-source', '1.2.0'
 
 gem "highcharts-rails", "~> 3.0.0"
 gem "yard"
@@ -44,10 +49,12 @@ gem "versionist", "~> 1.2.1"
 gem 'active_model_serializers'
 
 group :development do
-  gem "rspec-rails"
   gem "powder"
   gem 'dotenv-rails'
   gem 'sqlite3'
+  gem 'better_errors'
+  gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
+  gem 'quiet_assets'
 end
 
 group :production do

@@ -7,7 +7,7 @@ Money.SummaryMonthController = Ember.ObjectController.extend
     @_super()
     console.log "SummaryMonthController init"
 
-  isReadyToDrawBinding: 'model.isReady'
+  isReadyToDrawBinding: 'model.isLoaded'
   # totalCost: (->
   #   totalCost = 0
   #   @get('model.content').forEach (item) ->
@@ -22,7 +22,7 @@ Money.SummaryMonthController = Ember.ObjectController.extend
     @get('model.content').forEach (item) ->
       data = [
         item.get 'categoryName'
-        item.total
+        item.get 'total'
       ]
       series.push data
     return series

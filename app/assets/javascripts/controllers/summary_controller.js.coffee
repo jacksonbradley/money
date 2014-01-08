@@ -1,5 +1,5 @@
 Money.SummaryController = Ember.ObjectController.extend
-  isReadyToDrawBinding: 'model.isReady'
+  isReadyToDrawBinding: 'model.isLoaded'
   # chart: null
   # totalCost: (->
   #   totalCost = 0
@@ -14,7 +14,7 @@ Money.SummaryController = Ember.ObjectController.extend
     @get('model.content').forEach (item) ->
       data = [
         item.get 'categoryName'
-        item.total
+        item.get 'total'
       ]
       series.push data
     return series
@@ -26,7 +26,6 @@ Money.SummaryController = Ember.ObjectController.extend
  
   actions:
     toMonth: (month) ->
-      year = @get 'model.id'
+      year = @get 'model.year'
       model = Money.ModelMgr.querySummary(year, month)
-      model.set 'id', month
       @transitionToRoute 'summaryMonth', model

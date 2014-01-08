@@ -11,11 +11,13 @@ Money::Application.routes.draw do
   api_version(module: "Api", path: { value: "api" }, defaults: { format: 'json' }) do
     # namespace :api , defaults: {format: 'json'} do
       post 'upload' => 'monny#upload'
-      get 'list' => 'monny#list'
-      get 'query' => 'monny#query'
-      get 'summary' => 'monny#summary'
-      get 'trend' => 'monny#trend'
-      get 'category' => 'monny#category'
+      get 'years' => 'monny#list'
+      get 'months' => 'monny#list'
+
+      get 'records' => 'monny#query'
+      get 'summaries' => 'monny#summary'
+      get 'trends' => 'monny#trend'
+      get 'categories' => 'monny#category'
     # end
   end
   

@@ -16,24 +16,27 @@ class Api::MonnyController < ApplicationController
   end
 
   def query
-    Rails.logger.debug { (params.inspect) }
-    respond_with current_user.money_records.query_record(params)
+    respond_with current_user.money_records.query_record(params), root: 'records'
   end
 
   def category
-    respond_with Category.all # , root:false
+    respond_with Category.all, root: 'categorys'
   end
 
   def summary
-    respond_with current_user.money_records.query_summary(params)
+    respond_with current_user.money_records.query_summary(params), root: 'summarys'
   end
 
   def list
-    respond_with current_user.money_records.list_month(params)
+    if params[:y].present?
+      respond_with current_user.money_records.list_month(params), root: 'months'
+    else
+      respond_with current_user.money_records.list_year(), root: 'years'
+    end
   end
 
   def trend
-    respond_with current_user.money_records.query_trend(params)
+    respond_with current_user.money_records.query_trend(params), root: 'trends'
   end
 
   private

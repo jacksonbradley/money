@@ -1,4 +1,8 @@
 # serializer for category json
 class CategorySerializer < ActiveModel::Serializer
-  attributes :cid, :name
+  attributes :id, :cid, :name
+
+  def id
+    object.id.to_s
+  end
 end

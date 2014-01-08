@@ -1,5 +1,6 @@
 //= require handlebars
 //= require ember
+//= require ember-data
 //= require money
 //= require_tree ../../../vendor/assets/javascripts/.
 //= require highcharts

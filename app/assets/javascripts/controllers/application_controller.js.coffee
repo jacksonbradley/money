@@ -1,12 +1,13 @@
 Money.ApplicationController = Ember.ObjectController.extend
   selectedYear: 0
-  listYear: Money.ModelMgr.listYear()
-  # listYear: (->
-  #   return Money.ModelMgr.listYear()
-  # ).property()
+  listYear: (->
+    return Money.ModelMgr.listYear()
+  ).property()
+  # listYear: Money.Store.find('record') 
 
   init: ->
     @_super()
+    console.log 'ApplicationController init'
     @set 'selectedYear', new Date().getFullYear()
 
   actions:
@@ -19,25 +20,21 @@ Money.ApplicationController = Ember.ObjectController.extend
     toList: (year)->
       if year?
         @set 'selectedYear', year
-
       year = @get 'selectedYear'
       model = Money.ModelMgr.listMonth(@get 'selectedYear')
-      model.then (resolve, reject)->
-        resolve.set 'id', year
-      # model.set 'id', @get 'currentYear'
       @transitionToRoute 'year', model
 
     toSummary: ->
       model = Money.ModelMgr.querySummary(@get 'selectedYear')
-      model.set 'id', @get 'selectedYear'
+      # model.set 'id', @get 'selectedYear'
       @transitionToRoute 'summary', model 
 
     toTrend: ->
       model = Money.ModelMgr.listMonth(@get 'selectedYear')
       year = @get 'selectedYear'
-      model.then (resolve, reject)->
-        resolve.set 'id', year
-        resolve.set 'year', year
+      # model.then (resolve, reject)->
+        # resolve.set 'id', year
+        # resolve.set 'year', year
       # model.set 'id', @get 'currentYear'
       # model.set 'year', @get 'currentYear'
       @transitionToRoute 'trend', model

@@ -145,14 +145,16 @@ class MoneyRecord
 
   def self.build_money_record_by_year(document)
     value = document.fetch 'value'
-    monny = MoneyRecord.new
+    # monny = MoneyRecord.new
+    monny = Year.new
     monny.year = value.fetch 'year'
     return monny
   end
 
   def self.build_money_record_by_category(document)
     value = document.fetch 'value'
-    monny = MoneyRecord.new
+    # monny = MoneyRecord.new
+    monny = Summary.new
     monny.category_id = value.fetch 'category_id'
     monny.total = value.fetch 'total'
     return monny
@@ -169,7 +171,8 @@ class MoneyRecord
 
   def self.build_money_record_by_month(document)
     value = document.fetch 'value'
-    monny = MoneyRecord.new
+    monny = Month.new 
+    # monny = MoneyRecord.new
     monny.total = value.fetch 'total'
     monny.month = value.fetch 'month'
     monny.year = value.fetch 'year'
@@ -177,14 +180,11 @@ class MoneyRecord
   end
 
   def self.list_month(params)
-    if params[:y].present?
-      self.group_by_month(params)
-      # r.expense.group(:month, :year).select(
-      #   :month, :year, 'sum(amount) as total').order('month ASC')
-    else
-      # expense.group(:year).select(:year)
-      self.group_by_year
-    end
+    self.group_by_month(params)
+  end
+
+  def self.list_year()
+    self.group_by_year
   end
 
   def self.query_record(params)

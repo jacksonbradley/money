@@ -35,7 +35,7 @@ Money.TrendView = Ember.View.extend
         ]
       )
 
-      series = (@get 'controller').categoryLineChartCategory()
+      series = (@get 'controller').categoryLineChartData()
       $('#categoryTrend').highcharts (
         title: 
           text: 'Categories Cost'

@@ -1,12 +1,18 @@
 Money.TrendController = Ember.ObjectController.extend
-  dataReadyBinding: 'model.isReady'
-  categoryDataReadyBinding: 'modelForTrend.isReady'
+  dataReadyBinding: 'model.isLoaded'
+  categoryDataReady: false
+  # categoryDataChanged: (->
+  #   self = @
+  #   if @get('modelForTrend')
+  #     model.then (resolve, reject) ->
+  #       self.set 'categoryDataReady', true
+  # ).observes('modelForTrend.isLoaded')
 
   lineChartData: ->
     series = []
     @get('model.content').forEach (item) ->
       data = [
-        item.total
+        item.get 'total'
       ]
       series.push data
     return series
@@ -20,13 +26,12 @@ Money.TrendController = Ember.ObjectController.extend
       categories.push data
     return categories
 
-  categoryLineChartCategory: ->
+  categoryLineChartData: ->
     categories = []
     @get('modelForTrend.content').forEach (item) ->
       data = 
         name: item.get 'categoryName'
         data: item.get 'total'
-      
       categories.push data
     return categories
 
