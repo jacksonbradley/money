@@ -28,10 +28,22 @@ Money.TrendController = Ember.ObjectController.extend
 
   categoryLineChartData: ->
     categories = []
+    tmpHashKeepCategory = {}
     @get('modelForTrend.content').forEach (item) ->
+      if tmpHashKeepCategory[item.get 'category_id']
+        tmpHashKeepCategory[item.get 'category_id']['month'].push item.get 'month'
+        tmpHashKeepCategory[item.get 'category_id']['total'].push item.get 'total'
+      else
+        tmpHashKeepCategory[item.get 'category_id'] = {}
+        tmpHashKeepCategory[item.get 'category_id']['categoryName'] = item.get 'categoryName'
+        tmpHashKeepCategory[item.get 'category_id']['month'] = []
+        tmpHashKeepCategory[item.get 'category_id']['total'] = []
+        tmpHashKeepCategory[item.get 'category_id']['month'].push item.get 'month'
+        tmpHashKeepCategory[item.get 'category_id']['total'].push item.get 'total'
+    for key, value of tmpHashKeepCategory
       data = 
-        name: item.get 'categoryName'
-        data: item.get 'total'
+        name: value['categoryName']
+        data: value['total']
       categories.push data
     return categories
 
