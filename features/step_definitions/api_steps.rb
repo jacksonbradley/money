@@ -55,31 +55,31 @@ And /^the system knows about the following monny record$/ do |table|
 end
 
 When /^I send a GET request to category api$/ do
-  @response = page.driver.get api_category_path
+  @response = page.driver.get api_categories_path
 end
 
 When /^I send a GET request to list years api$/ do
-  @response = page.driver.get api_list_path
+  @response = page.driver.get api_years_path
 end
 
 When /^I send a GET request to list months of (\d+) api$/ do |year|
-  @response = page.driver.get api_list_path(y: year)
+  @response = page.driver.get api_months_path(y: year)
 end
 
 When /^I send a GET request to query month (\d+) of (\d+) api$/ do |month, year|
-  @response = page.driver.get api_query_path(m: month, y: year)
+  @response = page.driver.get api_records_path(m: month, y: year)
 end
 
 When /^I send a GET request to summary month (\d+) of (\d+) api$/ do |month, year|
-  @response = page.driver.get api_summary_path(m: month, y: year)
+  @response = page.driver.get api_summaries_path(m: month, y: year)
 end
 
 When /^I send a GET request to summary year (\d+) api$/ do |year|
-  @response = page.driver.get api_summary_path(y: year)
+  @response = page.driver.get api_summaries_path(y: year)
 end
 
 When /^I send a GET request to trend year (\d+) api$/ do |year|
-  @response = page.driver.get api_trend_path(y: year)
+  @response = page.driver.get api_trends_path(y: year)
 end
 
 Then /^should response correct category JSON data$/ do |expect|

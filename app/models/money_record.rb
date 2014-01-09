@@ -37,7 +37,7 @@ class MoneyRecord
     
     result = []
     expense.map_reduce(map, reduce).out(inline: true).each do |document|
-      result.push self.build_money_record_by_year(document)
+      result.push self.build_year(document)
     end
     result
   end
@@ -65,7 +65,7 @@ class MoneyRecord
     
     result = []
     where(year: params[:y]).expense.map_reduce(map, reduce).out(inline: true).each do |document|
-      result.push self.build_money_record_by_month(document)
+      result.push self.build_month(document)
     end
     result
   end
@@ -101,7 +101,7 @@ class MoneyRecord
     r = where(year: params[:y])
     r = r.where(month: params[:m]) if params[:m].present?
     r.expense.map_reduce(map, reduce).out(inline: true).finalize(final).each do |document|
-      result.push self.build_money_record_by_category(document)
+      result.push self.build_summary(document)
     end
     result
   end
@@ -137,13 +137,13 @@ class MoneyRecord
     result = []
     r = where(year: params[:y])
     r.expense.map_reduce(map, reduce).out(inline: true).finalize(final).each do |document|
-      result.push self.build_money_record_by_category_and_month(document)
+      result.push self.build_trend(document)
       # Rails.logger.debug { document }
     end
     result
   end
 
-  def self.build_money_record_by_year(document)
+  def self.build_year(document)
     value = document.fetch 'value'
     # monny = MoneyRecord.new
     monny = Year.new
@@ -151,7 +151,7 @@ class MoneyRecord
     return monny
   end
 
-  def self.build_money_record_by_category(document)
+  def self.build_summary(document)
     value = document.fetch 'value'
     # monny = MoneyRecord.new
     monny = Summary.new
@@ -160,16 +160,17 @@ class MoneyRecord
     return monny
   end
 
-  def self.build_money_record_by_category_and_month(document)
+  def self.build_trend(document)
     value = document.fetch 'value'
-    monny = MoneyRecord.new
+    # monny = MoneyRecord.new
+    monny = Trend.new
     monny.category_id = value.fetch 'category_id'
     monny.total = value.fetch 'total'
     monny.month = value.fetch 'month'
     return monny
   end
 
-  def self.build_money_record_by_month(document)
+  def self.build_month(document)
     value = document.fetch 'value'
     monny = Month.new 
     # monny = MoneyRecord.new

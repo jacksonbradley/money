@@ -1,7 +1,7 @@
 # serializer for money record
 class MoneyRecordSerializer < ActiveModel::Serializer
   attributes :id, :amount, :category_id,
-             :description, :day, :month, :year, :total
+             :description, :day, :month, :year
   # def total
   #   object.total if object.try(:total)
   # end

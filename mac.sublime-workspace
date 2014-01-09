@@ -4,76 +4,8 @@
 		"selected_items":
 		[
 			[
-				"summ",
-				"summaryMonth"
-			],
-			[
-				"contr",
-				"controller"
-			],
-			[
-				"isre",
-				"isReadyToDraw"
-			],
-			[
-				"cat",
-				"category_model"
-			],
-			[
 				"cate",
-				"categoryDataReady"
-			],
-			[
-				"mont",
-				"monthFullName"
-			],
-			[
-				"categ",
-				"categories"
-			],
-			[
-				"year",
-				"year_id"
-			],
-			[
-				"selec",
-				"select_year"
-			],
-			[
-				"Money",
-				"MoneyRecord"
-			],
-			[
-				"name",
-				"namespace"
-			],
-			[
-				"fin",
-				"finalize"
-			],
-			[
-				"cid",
-				"category_id"
-			],
-			[
-				"group",
-				"group_by_category"
-			],
-			[
-				"build",
-				"build_aggr_money_record"
-			],
-			[
-				"desc",
-				"description"
-			],
-			[
-				"respond",
-				"respond_to"
-			],
-			[
-				"In",
-				"Integer"
+				"categoryName"
 			],
 			[
 				"re",
@@ -324,6 +256,10 @@
 				"_currentRouteName"
 			],
 			[
+				"contr",
+				"controllerFor"
+			],
+			[
 				"un",
 				"unverifyWindow"
 			],
@@ -460,14 +396,6 @@
 	"buffers":
 	[
 		{
-			"file": "app/assets/javascripts/models/monny_model.js.coffee",
-			"settings":
-			{
-				"buffer_size": 8192,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "app/assets/javascripts/views/trend_view.js.coffee",
 			"settings":
 			{
@@ -479,23 +407,31 @@
 			"file": "app/assets/javascripts/controllers/trend_controller.js.coffee",
 			"settings":
 			{
-				"buffer_size": 1038,
+				"buffer_size": 1784,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "log/development.log",
+			"file": "app/assets/javascripts/models/monny_model.js.coffee",
 			"settings":
 			{
-				"buffer_size": 317432,
+				"buffer_size": 8192,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/controllers/api/monny_controller.rb",
+			"file": "app/assets/javascripts/routes/trend_route.js.coffee",
 			"settings":
 			{
-				"buffer_size": 1578,
+				"buffer_size": 499,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/javascripts/controllers/application_controller.js.coffee",
+			"settings":
+			{
+				"buffer_size": 1324,
 				"line_ending": "Unix"
 			}
 		}
@@ -565,99 +501,82 @@
 	"file_history":
 	[
 		"/Users/weichienhung/Documents/Git/money/config/database.yml",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/controllers/application_controller.js.coffee",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/controllers/summaryMonth_controller.js.coffee",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/controllers/summary_controller.js.coffee",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/routes/summaryMonth_route.js.coffee",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/views/summaryMonth_view.js.coffee",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/summary.handlebars",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/summaryMonth.handlebars",
-		"/Users/weichienhung/Documents/Git/money/app/models/summary.rb",
-		"/Users/weichienhung/Documents/Git/money/app/serializers/summary_serializer.rb",
-		"/Users/weichienhung/Documents/Git/money/app/models/money_record.rb",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/views/trend_view.js.coffee",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/controllers/trend_controller.js.coffee",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/routes/trend_route.js.coffee",
-		"/Users/weichienhung/Documents/Git/money/app/controllers/api/monny_controller.rb",
-		"/Users/weichienhung/Documents/Git/money/app/serializers/month_serializer.rb",
-		"/Users/weichienhung/Documents/Git/money/app/models/month.rb",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/routes/month_route.js.coffee",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/month.handlebars",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/controllers/month_controller.js.coffee",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/application.handlebars",
+		"/Users/weichienhung/Documents/Git/money/db/development.sqlite3",
 		"/Users/weichienhung/Documents/Git/money/config/routes.rb",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/store.js.coffee",
-		"/Users/weichienhung/Documents/Git/money/app/models/trend.rb",
-		"/Users/weichienhung/Documents/Git/money/app/serializers/trend_serializer.rb",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/routes/index_route.js.coffee",
-		"/Users/weichienhung/Documents/Git/money/app/controllers/portal_controller.rb",
-		"/Users/weichienhung/Documents/Git/money/app/controllers/application_controller.rb",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/views/summary_view.js.coffee",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/routes/summary_route.js.coffee",
-		"/Users/weichienhung/Documents/Git/money/app/serializers/money_record_serializer.rb",
-		"/Users/weichienhung/Documents/Git/money/log/development.log",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/routes/year_route.js.coffee",
-		"/Users/weichienhung/Documents/Git/money/app/serializers/year_serializer.rb",
-		"/Users/weichienhung/Documents/Git/money/app/models/year.rb",
-		"/Users/weichienhung/Documents/Git/money/app/serializers/category_serializer.rb",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/models/category_model.js.coffee",
-		"/Users/weichienhung/Documents/Git/money/Gemfile",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/models/year_model.js.coffee",
-		"/Users/weichienhung/Documents/Git/money/.gitignore",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/money.js.coffee",
-		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/portal.js",
-		"/Users/weichienhung/Documents/Git/money/config/environments/development.rb",
-		"/Users/weichienhung/Documents/Git/money/db/schema.rb",
-		"/Users/weichienhung/Documents/Git/money/tmp/ember-rails/ember-data.js",
-		"/Users/weichienhung/Documents/Git/money/features/step_definitions/api_steps.rb",
-		"/Users/weichienhung/Documents/Git/money/features/support/env.rb",
-		"/Users/weichienhung/Documents/Git/money/spec/spec_helper.rb",
-		"/Users/weichienhung/Documents/Git/money/features/api.feature",
-		"/Users/weichienhung/Documents/Git/money/db/seeds.rb",
-		"/Users/weichienhung/Documents/Git/money/app/assets/stylesheets/test.css",
-		"/Users/weichienhung/Documents/Git/money/app/models/user.rb",
-		"/Users/weichienhung/Documents/Git/money/db/sample.csv",
-		"/Users/weichienhung/Documents/Git/money/features/step_definitions/users_steps.rb",
-		"/Users/weichienhung/Documents/Git/money/config/initializers/devise.rb",
-		"/Users/weichienhung/Documents/Git/money/app/models/concerns/criteria.rb",
-		"/Users/weichienhung/Documents/Git/money/app/models/aggr_money_record.rb",
-		"/Users/weichienhung/Documents/Git/money/app/serializers/aggr_money_record_serializer.rb",
-		"/Users/weichienhung/Documents/Git/money/features/sign_in.feature",
-		"/Users/weichienhung/Documents/Git/money/config/application.rb",
-		"/Users/weichienhung/Documents/Git/money/app/models/category.rb",
-		"/Users/weichienhung/Documents/Git/money/spec/factories/users.rb",
 		"/Users/weichienhung/Documents/Git/money/spec/support/devise.rb",
+		"/Users/weichienhung/Documents/Git/money/spec/spec_helper.rb",
+		"/Users/weichienhung/Documents/Git/money/config/application.rb",
+		"/Users/weichienhung/Documents/Git/money/spec/factories/users.rb",
+		"/Users/weichienhung/Documents/Git/money/features/api.feature",
+		"/Users/weichienhung/Documents/Git/money/features/step_definitions/api_steps.rb",
+		"/Users/weichienhung/Documents/Git/money/features/sign_in.feature-tmp",
+		"/Users/weichienhung/Documents/Git/money/features/step_definitions/users_steps.rb",
+		"/Users/weichienhung/Documents/Git/money/db/seeds.rb",
+		"/Users/weichienhung/Documents/Git/money/Gemfile",
+		"/Users/weichienhung/Documents/Git/money/app/models/money_record.rb",
+		"/Users/weichienhung/Documents/Git/money/app/controllers/api/monny_controller.rb",
 		"/Users/weichienhung/Documents/Git/money/output.txt",
 		"/Users/weichienhung/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/weichienhung/Documents/Git/money/config/initializers/devise.rb",
+		"/Users/weichienhung/Documents/Git/money/app/models/user.rb",
 		"/Users/weichienhung/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/weichienhung/Documents/Git/money/db/schema.rb",
 		"/Users/weichienhung/Documents/Git/money/features/step_definitions/list_steps.rb",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/routes/index_route.js.coffee",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/routes/loading_route.js.coffee",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/routes/summary_route.js.coffee",
+		"/Users/weichienhung/Documents/Git/money/app/serializers/category_serializer.rb",
 		"/Users/weichienhung/Library/Application Support/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
 		"/Users/weichienhung/Documents/Git/money/app/helpers/application_helper.rb",
+		"/Users/weichienhung/Documents/Git/money/app/controllers/portal_controller.rb",
 		"/Users/weichienhung/Documents/Git/money/app/helpers/portal_helper.rb",
 		"/Users/weichienhung/Documents/Git/money/app/helpers/api/monny_helper.rb",
+		"/Users/weichienhung/Documents/Git/money/app/models/category.rb",
 		"/Users/weichienhung/Documents/Git/money/Gemfile.lock",
+		"/Users/weichienhung/Documents/Git/money/log/development.log",
+		"/Users/weichienhung/Documents/Git/money/app/serializers/money_record_serializer.rb",
 		"/Users/weichienhung/Documents/Git/money/rubocop-todo.yml",
+		"/Users/weichienhung/Documents/Git/money/app/controllers/application_controller.rb",
 		"/Users/weichienhung/Documents/Git/money/app/views/layouts/application.html.erb",
 		"/Users/weichienhung/Documents/Git/money/app/views/devise/sessions/new.html.erb",
+		"/Users/weichienhung/Documents/Git/money/db/sample.csv",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/views/trend_view.js.coffee",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/controllers/application_controller.js.coffee",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/models/monny_model.js.coffee",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/views/summaryMonth_view.js.coffee",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/views/summary_view.js.coffee",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/routes/trend_route.js.coffee",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/controllers/trend_controller.js.coffee",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/routes/summaryMonth_route.js.coffee",
 		"/Users/weichienhung/Documents/Git/myfirstgem/MyTemplate.rb",
 		"/Users/weichienhung/Documents/Git/money/config/environments/production.rb",
+		"/Users/weichienhung/Documents/Git/money/config/environments/development.rb",
 		"/Users/weichienhung/Documents/Git/money/app/views/portal/index.html.erb",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/portal.js",
 		"/Users/weichienhung/Documents/Git/money/.env",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/application.handlebars",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/views/upload_view.js.coffee",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/loading.handlebars",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/routes/year_route.js.coffee",
 		"/Users/weichienhung/Documents/Git/money/app/assets/stylesheets/common.css.scss",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/controllers/month_controller.js.coffee",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/controllers/summary_controller.js.coffee",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/month.handlebars",
 		"/Users/weichienhung/Documents/Git/money/README.rdoc",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/routes/month_route.js.coffee",
 		"/Users/weichienhung/Documents/Git/food-ntpc/README.rdoc",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/upload.handlebars",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/summaryMonth.handlebars",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/year.handlebars",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/controllers/summaryMonth_controller.js.coffee",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/summary.handlebars",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/monthButton.handlebars",
 		"/Users/weichienhung/Documents/Git/money/app/assets/stylesheets/header.css.scss",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/views/monthButton_view.js.coffee",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/router.js.coffee",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/trend.handlebars",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/application.js",
+		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/money.js.coffee",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/portal.js.coffee",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/money2.js",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/portal.js.coffee.tmp",
@@ -673,6 +592,7 @@
 		"/Users/weichienhung/Documents/Git/money/app/views/portal/upload.html.erb",
 		"/Users/weichienhung/Documents/Git/money/app/assets/javascripts/templates/index.handlebars",
 		"/Users/weichienhung/Dropbox/應用程式/Monny/Main Account_2013_09_15(14_49).csv",
+		"/Users/weichienhung/Documents/Git/money/.gitignore",
 		"/Users/weichienhung/Documents/Git/money/db/migrate/20130915072939_devise_create_users.rb",
 		"/Users/weichienhung/Documents/Git/money/db/migrate/20130915080341_create_money_records.rb",
 		"/Users/weichienhung/Documents/Git/money/db/migrate/20130915074007_add_confirmable_to_devise.rb",
@@ -691,7 +611,23 @@
 		"/Users/weichienhung/Documents/Git/groupme/db/seeds.rb",
 		"/Users/weichienhung/Documents/Git/groupme/config/initializers/secret_token.rb",
 		"/Users/weichienhung/Documents/Git/groupme/app/assets/javascripts/application.js",
-		"/Users/weichienhung/Documents/Git/groupme/app/models/ckeditor/attachment_file.rb"
+		"/Users/weichienhung/Documents/Git/groupme/app/models/ckeditor/attachment_file.rb",
+		"/Users/weichienhung/Documents/Git/groupme/config/routes.rb",
+		"/Users/weichienhung/Documents/Git/groupme/lib/tasks/dev.rake",
+		"/Users/weichienhung/Documents/Git/groupme/lib/ckeditor.rake",
+		"/Users/weichienhung/Documents/Git/groupme/.gitignore",
+		"/Users/weichienhung/Documents/Git/groupme/config/database.yml",
+		"/Users/weichienhung/Documents/Git/groupme/config/config.yml",
+		"/Users/weichienhung/Documents/Git/groupme/app/helpers/posts_helper.rb",
+		"/Users/weichienhung/Documents/Git/groupme/log/development.log",
+		"/Users/weichienhung/Documents/Git/groupme/app/views/posts/show.html.erb",
+		"/Users/weichienhung/Documents/Git/groupme/app/assets/stylesheets/common.css.scss",
+		"/Users/weichienhung/Documents/Git/groupme/app/views/layouts/application.html.erb",
+		"/Users/weichienhung/Documents/Git/groupme/app/views/groups/show.html.erb",
+		"/Users/weichienhung/Documents/Git/groupme/app/assets/stylesheets/bootstrap-override.css.scss",
+		"/Users/weichienhung/Documents/Git/groupme/app/views/groups/index.html.erb",
+		"/Users/weichienhung/Documents/Git/groupme/app/helpers/pagination_help.rb",
+		"/Users/weichienhung/Documents/Git/groupme/app/controllers/posts_controller.rb"
 	],
 	"find":
 	{
@@ -709,27 +645,6 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"build_money_record_by_month",
-			"group_by_month",
-			"retrieveYears",
-			"listYear",
-			".create",
-			"build_money_record_by_category",
-			"group_by_category",
-			"build_money_record_by_year",
-			"MonnyMonthlyCost",
-			"build_money_record_by_year",
-			"group_by_year",
-			"years",
-			"category",
-			"bson",
-			"mong",
-			"rspec-rails",
-			"json",
-			"finc",
-			"final",
-			"asc",
-			"value",
 			"create_unconfirmed_user",
 			"I return to the site",
 			"ctrl+g",
@@ -813,78 +728,6 @@
 			[
 				{
 					"buffer": 0,
-					"file": "app/assets/javascripts/models/monny_model.js.coffee",
-					"settings":
-					{
-						"buffer_size": 8192,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6381,
-								6381
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3920.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "app/assets/javascripts/views/trend_view.js.coffee",
 					"settings":
 					{
@@ -895,80 +738,8 @@
 						"selection":
 						[
 							[
-								1101,
-								1101
-							]
-						],
-						"settings":
-						{
-							"BracketHighlighterBusy": false,
-							"bh_regions":
-							[
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_square",
-								"bh_square_center",
-								"bh_square_open",
-								"bh_square_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
-								"bh_default",
-								"bh_default_center",
-								"bh_default_open",
-								"bh_default_close",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_round",
-								"bh_round_center",
-								"bh_round_open",
-								"bh_round_close",
-								"bh_tag",
-								"bh_tag_center",
-								"bh_tag_open",
-								"bh_tag_close",
-								"bh_single_quote",
-								"bh_single_quote_center",
-								"bh_single_quote_open",
-								"bh_single_quote_close"
-							],
-							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 565.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/assets/javascripts/controllers/trend_controller.js.coffee",
-					"settings":
-					{
-						"buffer_size": 1038,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								682,
-								703
+								724,
+								734
 							]
 						],
 						"settings":
@@ -1028,19 +799,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "log/development.log",
+					"buffer": 1,
+					"file": "app/assets/javascripts/controllers/trend_controller.js.coffee",
 					"settings":
 					{
-						"buffer_size": 317432,
+						"buffer_size": 1784,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								223681,
-								223681
+								1215,
+								1215
 							]
 						],
 						"settings":
@@ -1089,30 +860,174 @@
 								"bh_single_quote_open",
 								"bh_single_quote_close"
 							],
-							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 48194.0,
+						"translation.y": 359.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/assets/javascripts/models/monny_model.js.coffee",
+					"settings":
+					{
+						"buffer_size": 8192,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3256,
+								3256
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 159.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/assets/javascripts/routes/trend_route.js.coffee",
+					"settings":
+					{
+						"buffer_size": 499,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								325,
+								325
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "app/controllers/api/monny_controller.rb",
+					"file": "app/assets/javascripts/controllers/application_controller.js.coffee",
 					"settings":
 					{
-						"buffer_size": 1578,
+						"buffer_size": 1324,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1204,
-								1204
+								1093,
+								1093
 							]
 						],
 						"settings":
@@ -1161,12 +1076,12 @@
 								"bh_single_quote_open",
 								"bh_single_quote_close"
 							],
-							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 572.0,
+						"translation.y": 239.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1216,60 +1131,12 @@
 		"selected_items":
 		[
 			[
-				"da",
+				"data",
 				"config/database.yml"
 			],
 			[
-				"deve",
-				"log/development.log"
-			],
-			[
-				"store",
-				"app/assets/javascripts/store.js.coffee"
-			],
-			[
-				"route",
+				"rout",
 				"config/routes.rb"
-			],
-			[
-				"gem",
-				"Gemfile"
-			],
-			[
-				".giti",
-				".gitignore"
-			],
-			[
-				"rou",
-				"config/routes.rb"
-			],
-			[
-				"port",
-				"app/assets/javascripts/portal.js"
-			],
-			[
-				"seed",
-				"db/seeds.rb"
-			],
-			[
-				"user",
-				"app/models/user.rb"
-			],
-			[
-				"devise",
-				"config/initializers/devise.rb"
-			],
-			[
-				"sam",
-				"db/sample.csv"
-			],
-			[
-				"samp",
-				"db/sample.csv"
-			],
-			[
-				"app",
-				"config/application.rb"
 			],
 			[
 				"appli",
@@ -1288,12 +1155,32 @@
 				"app/models/money_record.rb"
 			],
 			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"seed",
+				"db/seeds.rb"
+			],
+			[
+				"devise",
+				"config/initializers/devise.rb"
+			],
+			[
 				"schema",
 				"db/schema.rb"
 			],
 			[
+				"user",
+				"app/models/user.rb"
+			],
+			[
 				"moneyreo",
 				"app/models/money_record.rb"
+			],
+			[
+				"route",
+				"config/routes.rb"
 			],
 			[
 				"moncon",
@@ -1308,8 +1195,16 @@
 				"app/models/category.rb"
 			],
 			[
+				"port",
+				"app/controllers/portal_controller.rb"
+			],
+			[
 				"catego",
 				"app/models/category.rb"
+			],
+			[
+				"deve",
+				"log/development.log"
 			],
 			[
 				"monncon",
@@ -1480,6 +1375,10 @@
 				"app/controllers/api/monny_controller.rb"
 			],
 			[
+				"rou",
+				"app/assets/javascripts/router.js.coffee"
+			],
+			[
 				"model",
 				"app/assets/javascripts/models/monny_model.js.coffee"
 			],
@@ -1490,10 +1389,6 @@
 			[
 				"sche",
 				"db/schema.rb"
-			],
-			[
-				"rout",
-				"config/routes.rb"
 			],
 			[
 				"addmi",
@@ -1726,6 +1621,26 @@
 			[
 				"dev",
 				"config/environments/development.rb"
+			],
+			[
+				"readme",
+				"README.rdoc"
+			],
+			[
+				"bookmart",
+				"test/integration/bookmarks_test.rb"
+			],
+			[
+				"test",
+				"log/test.log"
+			],
+			[
+				"eni",
+				"config/environment.rb"
+			],
+			[
+				"book",
+				"test/unit/bookmark_test.rb"
 			]
 		],
 		"width": 0.0

@@ -12,9 +12,9 @@ Feature: Provide API
     When I send a GET request to category api
     Then should response correct category JSON data
       """
-      {"monny":[{"cid":1,"name":"食"},
-      {"cid":2,"name":"交際娛樂"},
-      {"cid":3,"name":"交通"}]}
+      {"categorys":[{"id":"1", "cid":1,"name":"食"},
+      {"id":"2", "cid":2,"name":"交際娛樂"},
+      {"id":"3", "cid":3,"name":"交通"}]}
       """
 
   Scenario: list years through REST API
@@ -25,7 +25,7 @@ Feature: Provide API
     When I send a GET request to list years api
     Then should response correct category JSON data
       """
-      {"monny":[{"year":2013},{"year":2014}]}
+      {"years":[{"id":"2013","year":2013},{"id":"2014","year":2014}]}
       """
 
   Scenario: list months of the year through REST API
@@ -39,8 +39,8 @@ Feature: Provide API
     When I send a GET request to list months of 2013 api
     Then should response correct category JSON data
       """
-      {"monny":[{"month":11,"year":2013,"total":200},
-      {"month":12,"year":2013,"total":330}]}
+      {"months":[{"id":"201311","month":11,"total":200},
+      {"id":"201312","month":12,"total":330}]}
       """
 
   Scenario: query record of the month through REST API
@@ -52,10 +52,10 @@ Feature: Provide API
     When I send a GET request to query month 11 of 2013 api
     Then should response correct category JSON data
       """
-      {"monny":[
-      {"amount":150,"category_id":1,"description":"dinner",
+      {"records":[
+      {"id":"20131121","amount":150,"category_id":1,"description":"dinner",
       "day":2,"month":11,"year":2013},
-      {"amount":150,"category_id":1,"description":"dinner",
+      {"id":"20131131","amount":150,"category_id":1,"description":"dinner",
       "day":3,"month":11,"year":2013}
       ]}
       """
@@ -71,10 +71,10 @@ Feature: Provide API
     When I send a GET request to summary year 2013 api
     Then should response correct category JSON data
       """
-      {"monny":[
-      {"category_id":1,"total":1650},
-      {"category_id":2,"total":1550},
-      {"category_id":3,"total":100}
+      {"summarys":[
+      {"id":"1", "category_id":1,"total":1650},
+      {"id":"2", "category_id":2,"total":1550},
+      {"id":"3", "category_id":3,"total":100}
       ]}
       """
 
@@ -87,9 +87,9 @@ Feature: Provide API
     When I send a GET request to summary month 11 of 2013 api
     Then should response correct category JSON data
       """
-      {"monny":[
-      {"category_id":1,"total":1650},
-      {"category_id":2,"total":150}
+      {"summarys":[
+      {"id":"1", "category_id":1,"total":1650},
+      {"id":"2", "category_id":2,"total":150}
       ]}
       """
 
@@ -103,10 +103,10 @@ Feature: Provide API
     When I send a GET request to trend year 2013 api
     Then should response correct category JSON data
       """
-      {"monny":[
-      {"category_id":1,"month":10,"total":150},
-      {"category_id":1,"month":11,"total":300},
-      {"category_id":2,"month":11,"total":1500}
+      {"trends":[
+      {"id":"110","category_id":1,"month":10,"total":150},
+      {"id":"111","category_id":1,"month":11,"total":300},
+      {"id":"211","category_id":2,"month":11,"total":1500}
       ]}
       """
 
